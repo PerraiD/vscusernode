@@ -106,6 +106,9 @@ router.get('/', function(req,res,next) {
             res.send(resp);
         }
     }
-    res.json(resp);
+    if (resp.error){ //avoid Error: Can't set headers after they are sent.
+        res.json(resp);
+    }
+   
 })
 module.exports = router;
