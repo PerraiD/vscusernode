@@ -33,7 +33,9 @@ var users= [
   {"login" : "LUDOVIC_FLEURIEAU", "sn" : "FLEURIEAU", "mail" : "lfleurieau@voyages-sncf.com", "givenName" : "Ludovic", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
   {"login" : "STEPHANIE_BROTONS", "sn" : "BROTONS", "mail" : "sbrotons@voyages-sncf.com", "givenName" : "Stephanie", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
   {"login" : "MAISTA_DAKITSE", "sn" : "DAKITSE", "mail" : "MDakitse@voyages-sncf.com", "givenName" : "Maista Dedevi ", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
-  {"login" : "MAGALI_PIERRE-LOUIS", "sn" : "PIERRE-LOUIS", "mail" : "mpierre-louis@voyages-sncf.com", "givenName" : "Magali", "inetUserStatus" : "active", "token" : randtoken.generate(32)}
+  {"login" : "MAGALI_PIERRE-LOUIS", "sn" : "PIERRE-LOUIS", "mail" : "mpierre-louis@voyages-sncf.com", "givenName" : "Magali", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
+  {"login" : "RAPHAEL_MOULINS", "sn" : "RAPHAEL", "mail" : "rmoulins@voyages-sncf.com", "givenName" : "Raphael", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
+  {"login" : "MARIE-BLESH_YVES", "sn" : "YVES-MARIE", "mail" : "ymblesh@voyages-sncf.com", "givenName" : "Yves-Marie", "inetUserStatus" : "active", "token" : randtoken.generate(32)}
 ]
 
 
@@ -73,14 +75,14 @@ function response_identity(user){
 /**
  * get function to retrieve all users from the database
  */
-router.get('/', function(req,res,next) {
-    res.json(users);
-})
+// router.get('/', function(req,res,next) {
+//     res.json(users);
+// })
 
 /**
  * get function to retrieve one user by its id
  */
-.post('/json/authenticate', function(req,res,next) {   
+router.post('/json/authenticate', function(req,res,next) {   
     var login = req.headers["X-OpenAM-Username"] || req.headers["x-openam-username"]
     var token = {"tokenId":null}
     if(login){
