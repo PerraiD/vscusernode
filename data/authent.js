@@ -35,7 +35,7 @@ var users= [
   {"login" : "MAISTA_DAKITSE", "sn" : "DAKITSE", "mail" : "MDakitse@voyages-sncf.com", "givenName" : "Maista Dedevi ", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
   {"login" : "MAGALI_PIERRE-LOUIS", "sn" : "PIERRE-LOUIS", "mail" : "mpierre-louis@voyages-sncf.com", "givenName" : "Magali", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
   {"login" : "RAPHAEL_MOULINS", "sn" : "MOULINS", "mail" : "rmoulins@voyages-sncf.com", "givenName" : "Raphael", "inetUserStatus" : "active", "token" : randtoken.generate(32)},
-  {"login" : "YVES-MARIE_BLESH", "sn" : "BLESH", "mail" : "ymblesh@voyages-sncf.com", "givenName" : "Yves-Marie", "inetUserStatus" : "active", "token" : randtoken.generate(32)}
+  {"login" : "YVES-MARIE_BLESCH", "sn" : "BLESCH", "mail" : "ymblesch@voyages-sncf.com", "givenName" : "Yves-Marie", "inetUserStatus" : "active", "token" : randtoken.generate(32)}
 ]
 
 
